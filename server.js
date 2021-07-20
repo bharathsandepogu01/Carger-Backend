@@ -3,7 +3,7 @@ const cors= require('cors');
 const mongoose= require('mongoose');
 const bodyParser = require('body-parser');
 const app= express();
-const port= 8008;
+const port= process.env.PORT || 8001;
 const paypal= require('paypal-rest-sdk');
 
 
